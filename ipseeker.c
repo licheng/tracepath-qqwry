@@ -21,8 +21,8 @@ static uint32_t ipfile_readint(long offset, unsigned len) {
     assert(len <= 4);
     fseek(g_file, offset, SEEK_SET);
     uint32_t val = 0;
-    // little endian
     fread(&val, len, 1, g_file);
+    val = le32toh(val);
     return val;
 }
 
