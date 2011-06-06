@@ -1,0 +1,9 @@
+This is modified version of tracepath, which can trace path to a
+network host and display geographical position for each hop.
+
+QQWry database is used for geographical position lookup (see
+http://www.cz88.net/ for database download and
+http://lumaqq.linuxsir.org/article/qqwry_format_detail.html for
+detailed description). The database must be named as QQWry.Dat and
+placed in the running directory of this tool.
+
